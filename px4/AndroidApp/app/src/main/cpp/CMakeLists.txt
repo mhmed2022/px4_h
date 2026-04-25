@@ -105,16 +105,16 @@ message(STATUS "uORB compressed fields auto-generated")
 set(GEN_DIR ${CMAKE_CURRENT_BINARY_DIR}/generated)
 file(MAKE_DIRECTORY ${GEN_DIR})
 
-execute_process(COMMAND git -C ${PX4_ROOT} describe --always --tags --dirty
-    OUTPUT_VARIABLE PX4_GIT_TAG OUTPUT_STRIP_TRAILING_WHITESPACE ERROR_QUIET)
+# Pin PX4 firmware version tag so AUTOPILOT_VERSION reports a valid version
+# to MAVLink ground stations (e.g. QGroundControl). The embedded PX4 tree has
+# no upstream tag, so `git describe` falls back to the commit SHA which fails
+# version_tag_to_number() parsing and yields flight_sw_version = 0.
+set(PX4_GIT_TAG "v1.17.0-alpha1")
+
 execute_process(COMMAND git -C ${PX4_ROOT} rev-parse HEAD
     OUTPUT_VARIABLE PX4_GIT_VERSION OUTPUT_STRIP_TRAILING_WHITESPACE ERROR_QUIET)
 execute_process(COMMAND git -C ${PX4_ROOT} rev-parse --abbrev-ref HEAD
     OUTPUT_VARIABLE PX4_GIT_BRANCH OUTPUT_STRIP_TRAILING_WHITESPACE ERROR_QUIET)
-
-if(NOT PX4_GIT_TAG)
-    set(PX4_GIT_TAG "unknown")
-endif()
 if(NOT PX4_GIT_VERSION)
     set(PX4_GIT_VERSION "0000000000000000")
 endif()
