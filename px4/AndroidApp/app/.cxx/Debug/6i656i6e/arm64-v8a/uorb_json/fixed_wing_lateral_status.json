@@ -1,0 +1,10 @@
+
+
+{
+		"fields": "\u0089 timestamp;\u008a lateral_acceleration_setpoint;\u008a can_run_factor;",
+		"fields_total_length": 76,
+		"orb_ids": [96],
+		"main_orb_id": 96,
+		"dependencies": [],
+		"name": "px4/FixedWingLateralStatus"
+}

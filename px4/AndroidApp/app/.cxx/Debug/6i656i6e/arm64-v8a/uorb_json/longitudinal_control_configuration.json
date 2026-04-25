@@ -1,0 +1,10 @@
+
+
+{
+		"fields": "\u0089 timestamp;\u008a pitch_min;\u008a pitch_max;\u008a throttle_min;\u008a throttle_max;\u008a climb_rate_target;\u008a sink_rate_target;\u008a speed_weight;\u008c enforce_low_height_condition;\u008c disable_underspeed_protection;\u0086[2] _padding0;",
+		"fields_total_length": 245,
+		"orb_ids": [145],
+		"main_orb_id": 145,
+		"dependencies": [],
+		"name": "px4/LongitudinalControlConfiguration"
+}

@@ -1,0 +1,69 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "px4phone_native",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "px4phone_native::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-px4phone_native-Debug-57c9af854bc2652fc9c4.json",
+					"name" : "px4phone_native",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "usb1.0::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-usb1.0-Debug-a9bc6a247f32e0bfea22.json",
+					"name" : "usb1.0",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a",
+		"source" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}

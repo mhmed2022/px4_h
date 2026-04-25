@@ -1,0 +1,10 @@
+
+
+{
+		"fields": "\u0089 timestamp;\u008a course_setpoint;\u008a lateral_acceleration_ff;\u008a bearing_feas;\u008a bearing_feas_on_track;\u008a signed_track_error;\u008a track_error_bound;\u008a adapted_period;\u0086 wind_est_valid;\u0086[3] _padding0;",
+		"fields_total_length": 232,
+		"orb_ids": [94],
+		"main_orb_id": 94,
+		"dependencies": [],
+		"name": "px4/FixedWingLateralGuidanceStatus"
+}

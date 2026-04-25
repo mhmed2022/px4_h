@@ -1,0 +1,10 @@
+
+
+{
+		"fields": "\u0089 timestamp;\u0089 request_id;\u0087 px4_ros2_api_version;\u008d[25] name;\u008c register_arming_check;\u008c register_mode;\u008c register_mode_executor;\u008c enable_replace_internal_mode;\u0086 replace_internal_mode;\u008c activate_mode_immediately;\u008c not_user_selectable;\u0086[6] _padding0;",
+		"fields_total_length": 298,
+		"orb_ids": [207],
+		"main_orb_id": 207,
+		"dependencies": [],
+		"name": "px4/RegisterExtComponentRequest"
+}

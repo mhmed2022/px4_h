@@ -1,0 +1,33 @@
+Starting a Gradle Daemon, 1 incompatible Daemon could not be reused, use --status for details
+
+> Configure project :app
+e: file:///E:/ardophone/lastpro3/PX4_ANDROID_APP/AndroidApp/app/build.gradle.kts:2:11: Unresolved reference: libs
+e: file:///E:/ardophone/lastpro3/PX4_ANDROID_APP/AndroidApp/app/build.gradle.kts:3:11: Unresolved reference: libs
+e: file:///E:/ardophone/lastpro3/PX4_ANDROID_APP/AndroidApp/app/build.gradle.kts:4:11: Unresolved reference: libs
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file 'E:\ardophone\lastpro3\PX4_ANDROID_APP\AndroidApp\app\build.gradle.kts' line: ٢
+
+* What went wrong:
+Script compilation errors:
+
+  Line 2:     alias(libs.plugins.android.application)
+                    ^ Unresolved reference: libs
+
+  Line 3:     alias(libs.plugins.kotlin.android)
+                    ^ Unresolved reference: libs
+
+  Line 4:     alias(libs.plugins.kotlin.compose)
+                    ^ Unresolved reference: libs
+
+3 errors
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 18s

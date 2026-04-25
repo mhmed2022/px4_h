@@ -1,0 +1,10 @@
+
+
+{
+		"fields": "\u0089 timestamp;\u0088 uptime_sec;\u0087 node_id;\u0087 vendor_specific_status_code;\u0086 health;\u0086 mode;\u0086 sub_mode;\u0086[5] _padding0;",
+		"fields_total_length": 159,
+		"orb_ids": [42],
+		"main_orb_id": 42,
+		"dependencies": [],
+		"name": "px4/DronecanNodeStatus"
+}

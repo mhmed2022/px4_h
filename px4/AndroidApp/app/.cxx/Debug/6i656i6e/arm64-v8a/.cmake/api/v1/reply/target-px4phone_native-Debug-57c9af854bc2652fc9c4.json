@@ -1,0 +1,5927 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/build/intermediates/cxx/Debug/6i656i6e/obj/arm64-v8a/libpx4phone_native.so"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_link_libraries",
+			"target_compile_options",
+			"add_definitions",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 898,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 920,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 901,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 185,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 248,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -include /home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/include/visibility.h -fno-limit-debug-info  -fPIC"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-deprecated-declarations"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-address-of-packed-member"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-unused-variable"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-unused-function"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-unused-but-set-variable"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-missing-field-initializers"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-reorder"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-implicit-fallthrough"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-tautological-constant-out-of-range-compare"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-D_FORTIFY_SOURCE=2"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-fno-exceptions"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-fno-rtti"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-O2"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_ARCH_BOARD_PX4_ANDROID=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_BOARD_ROOT_PATH=\".\""
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_DATAMAN_PERSISTENT_STORAGE=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_EKF2_AIRSPEED=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_EKF2_AUXVEL=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_EKF2_AUX_GLOBAL_POSITION=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_EKF2_BAROMETER=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_EKF2_BARO_COMPENSATION=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_EKF2_DRAG_FUSION=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_EKF2_EXTERNAL_VISION=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_EKF2_GNSS=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_EKF2_GNSS_YAW=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_EKF2_GRAVITY_FUSION=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_EKF2_MAGNETOMETER=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_EKF2_OPTICAL_FLOW=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_EKF2_RANGE_FINDER=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_EKF2_SIDESLIP=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_EKF2_TERRAIN=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_EKF2_WIND=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_LOGGER_STACK_SIZE=6000"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_NUM_MISSION_ITMES_SUPPORTED=1000"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_SENSORS_VEHICLE_ACCELERATION=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_SENSORS_VEHICLE_AIR_DATA=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_SENSORS_VEHICLE_ANGULAR_VELOCITY=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_SENSORS_VEHICLE_GPS_POSITION=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_SENSORS_VEHICLE_MAGNETOMETER=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "HEATSHRINK_DYNAMIC_ALLOC=0"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "MAVLINK_UDP=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "MODULE_NAME=\"px4\""
+				},
+				{
+					"backtrace" : 4,
+					"define" : "PARAM_NO_AUTOSAVE=0"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "PARAM_NO_ORB=0"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "PX4_BOARD_LABEL=\"\""
+				},
+				{
+					"backtrace" : 4,
+					"define" : "PX4_BOARD_NAME=\"px4_android\""
+				},
+				{
+					"backtrace" : 4,
+					"define" : "__PX4_ANDROID"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "__PX4_LINUX"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "__PX4_POSIX"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "__STDC_FORMAT_MACROS"
+				},
+				{
+					"define" : "px4phone_native_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/generated"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/generated/parameters"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/generated/events"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/lib"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/lib/matrix"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/lib/slew_rate"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/lib/heatshrink/heatshrink"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/mc_att_control/AttitudeControl"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/lib/control_allocation/actuator_effectiveness"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/lib/control_allocation/control_allocation"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/control_allocator/VehicleActuatorEffectiveness"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/generated/mixer_module"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/drivers"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/platforms"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/platforms/posix/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/platforms/common/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/platforms/common/uORB"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/platforms/common"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/platforms/posix/src/px4/generic/generic/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/platforms/posix/src/px4/common/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/mavlink_generated/v2.0"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/mavlink_generated/v2.0/common"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/mavlink_generated/v2.0/minimal"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/mavlink_generated/v2.0/standard"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/mavlink_generated/v2.0/development"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/mavlink_generated/v2.0/uAvionix"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/mavlink"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/ekf2"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/ekf2/EKF"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/sensors"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/load_mon"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/simulation/simulator_mavlink"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/ekf2/EKF/python"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/flight_mode_manager"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/flight_mode_manager/tasks/FlightTask"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/flight_mode_manager/tasks/Auto"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/flight_mode_manager/tasks/AutoFollowTarget"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/flight_mode_manager/tasks/AutoFollowTarget/follow_target_estimator"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/flight_mode_manager/tasks/AltitudeCruise"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/flight_mode_manager/tasks/Descend"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/flight_mode_manager/tasks/Failsafe"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/flight_mode_manager/tasks/ManualAcceleration"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/flight_mode_manager/tasks/ManualAccelerationSlow"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/flight_mode_manager/tasks/ManualAltitude"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/flight_mode_manager/tasks/ManualAltitudeSmoothVel"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/flight_mode_manager/tasks/ManualPosition"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/flight_mode_manager/tasks/Orbit"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/flight_mode_manager/tasks/Transition"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/flight_mode_manager/tasks/Utility"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/mc_pos_control/PositionControl"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/mc_pos_control/GotoControl"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/navigator/GeofenceBreachAvoidance"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/lib/motion_planning"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/mc_pos_control/Takeoff"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/lib/drivers/accelerometer"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/lib/drivers/gyroscope"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/lib/drivers/magnetometer"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/lib/drivers/device"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/lib/version"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/lib/timesync"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/lib/tunes"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/navigator/MissionFeasibility"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/lib/weather_vane"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/lib/variable_length_ringbuffer"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/drivers/gps"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/drivers/gps/devices/src"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/libusb_src/libusb"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/libusb_src/libusb/os"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				104,
+				105,
+				106,
+				107,
+				108,
+				109,
+				110,
+				111,
+				112,
+				113,
+				114,
+				115,
+				116,
+				117,
+				118,
+				119,
+				120,
+				121,
+				122,
+				123,
+				124,
+				125,
+				126,
+				127,
+				128,
+				129,
+				130,
+				131,
+				132,
+				133,
+				134,
+				135,
+				136,
+				137,
+				138,
+				139,
+				140,
+				141,
+				142,
+				143,
+				144,
+				145,
+				146,
+				147,
+				148,
+				149,
+				150,
+				151,
+				152,
+				153,
+				154,
+				155,
+				156,
+				157,
+				158,
+				159,
+				160,
+				161,
+				162,
+				163,
+				164,
+				165,
+				166,
+				167,
+				168,
+				169,
+				170,
+				171,
+				172,
+				173,
+				174,
+				175,
+				176,
+				177,
+				178,
+				179,
+				180,
+				181,
+				182,
+				183,
+				184,
+				185,
+				186,
+				187,
+				188,
+				189,
+				190,
+				191,
+				192,
+				193,
+				194,
+				195,
+				196,
+				197,
+				198,
+				199,
+				200,
+				201,
+				202,
+				203,
+				204,
+				205,
+				206,
+				207,
+				208,
+				209,
+				210,
+				211,
+				212,
+				213,
+				214,
+				215,
+				216,
+				217,
+				218,
+				219,
+				220,
+				221,
+				222,
+				223,
+				224,
+				225,
+				226,
+				227,
+				228,
+				229,
+				230,
+				231,
+				232,
+				233,
+				234,
+				235,
+				236,
+				237,
+				238,
+				239,
+				240,
+				241,
+				242,
+				243,
+				244,
+				245,
+				246,
+				247,
+				248,
+				249,
+				250,
+				251,
+				252,
+				253,
+				254,
+				255,
+				256,
+				257,
+				258,
+				259,
+				260,
+				261,
+				262,
+				263,
+				264,
+				265,
+				266,
+				281,
+				282,
+				283,
+				284,
+				285,
+				286,
+				287,
+				288,
+				289,
+				290,
+				291,
+				292,
+				293,
+				294,
+				295,
+				296,
+				297,
+				298,
+				299,
+				300,
+				301,
+				302,
+				303,
+				304,
+				305,
+				306,
+				307,
+				308,
+				309,
+				310,
+				311,
+				312,
+				313,
+				314,
+				315,
+				316,
+				317,
+				318,
+				319,
+				320,
+				321,
+				322,
+				323,
+				324,
+				325,
+				326,
+				327,
+				328,
+				329,
+				330,
+				331,
+				332,
+				333,
+				334,
+				335,
+				336,
+				337,
+				338,
+				339,
+				340,
+				341,
+				342,
+				343,
+				344,
+				345,
+				346,
+				347,
+				348,
+				349,
+				350,
+				351,
+				352,
+				353,
+				354,
+				355,
+				356,
+				357,
+				358,
+				359,
+				360,
+				361,
+				362,
+				363,
+				364,
+				365,
+				366,
+				367,
+				368,
+				369,
+				370,
+				371,
+				372,
+				373,
+				374,
+				375,
+				376,
+				377,
+				378,
+				379,
+				380,
+				381,
+				382,
+				383,
+				384,
+				385,
+				386,
+				387,
+				388,
+				389,
+				390,
+				391,
+				392,
+				393,
+				394,
+				395,
+				396,
+				397,
+				398,
+				399,
+				400,
+				401,
+				402,
+				403,
+				404,
+				405,
+				406,
+				407,
+				408,
+				409,
+				410,
+				411,
+				412,
+				413,
+				414,
+				415,
+				416,
+				417,
+				418,
+				419,
+				420,
+				421,
+				422,
+				423,
+				424,
+				425,
+				426,
+				427,
+				428,
+				429,
+				430,
+				431,
+				432,
+				433,
+				434,
+				435,
+				436,
+				437,
+				438,
+				439,
+				440,
+				441,
+				442,
+				443,
+				444,
+				445,
+				446,
+				447,
+				448,
+				449,
+				450,
+				451,
+				452,
+				453,
+				454,
+				455,
+				456,
+				457,
+				458,
+				459,
+				460,
+				461,
+				462,
+				463,
+				464,
+				465,
+				466,
+				467,
+				468,
+				469,
+				470,
+				471,
+				472,
+				473,
+				474,
+				476,
+				477,
+				478,
+				479,
+				480,
+				481,
+				482,
+				483,
+				484,
+				485,
+				486,
+				487,
+				488,
+				489,
+				490,
+				491,
+				492,
+				493,
+				494,
+				495,
+				496,
+				497,
+				498,
+				499,
+				500,
+				501,
+				502,
+				503,
+				504,
+				505,
+				506,
+				507,
+				508,
+				509,
+				510,
+				511,
+				512,
+				513,
+				514,
+				515,
+				516,
+				517,
+				518,
+				519,
+				520,
+				521,
+				522,
+				523,
+				524,
+				525,
+				526,
+				527,
+				529,
+				530,
+				531,
+				532,
+				533,
+				534,
+				535,
+				536,
+				537,
+				538,
+				539,
+				540,
+				541,
+				542,
+				543,
+				544,
+				545,
+				546,
+				547,
+				548,
+				549,
+				550,
+				551,
+				552,
+				553,
+				554,
+				555,
+				556,
+				557,
+				558,
+				559,
+				560,
+				561,
+				562,
+				565,
+				566,
+				567,
+				568,
+				569,
+				570,
+				571,
+				572,
+				573,
+				575,
+				576,
+				577,
+				579,
+				580,
+				581,
+				582,
+				583,
+				584,
+				585,
+				586,
+				587,
+				588,
+				589
+			],
+			"sysroot" : 
+			{
+				"path" : "/home/ash/Android/Sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
+			}
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -include /home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/include/visibility.h -fno-limit-debug-info  -std=gnu11 -fPIC"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-deprecated-declarations"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-address-of-packed-member"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-unused-variable"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-unused-function"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-unused-but-set-variable"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-missing-field-initializers"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-reorder"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-implicit-fallthrough"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wno-tautological-constant-out-of-range-compare"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-D_FORTIFY_SOURCE=2"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-fno-exceptions"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-fno-rtti"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-O2"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_ARCH_BOARD_PX4_ANDROID=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_BOARD_ROOT_PATH=\".\""
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_DATAMAN_PERSISTENT_STORAGE=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_EKF2_AIRSPEED=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_EKF2_AUXVEL=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_EKF2_AUX_GLOBAL_POSITION=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_EKF2_BAROMETER=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_EKF2_BARO_COMPENSATION=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_EKF2_DRAG_FUSION=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_EKF2_EXTERNAL_VISION=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_EKF2_GNSS=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_EKF2_GNSS_YAW=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_EKF2_GRAVITY_FUSION=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_EKF2_MAGNETOMETER=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_EKF2_OPTICAL_FLOW=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_EKF2_RANGE_FINDER=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_EKF2_SIDESLIP=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_EKF2_TERRAIN=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_EKF2_WIND=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_LOGGER_STACK_SIZE=6000"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_NUM_MISSION_ITMES_SUPPORTED=1000"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_SENSORS_VEHICLE_ACCELERATION=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_SENSORS_VEHICLE_AIR_DATA=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_SENSORS_VEHICLE_ANGULAR_VELOCITY=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_SENSORS_VEHICLE_GPS_POSITION=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "CONFIG_SENSORS_VEHICLE_MAGNETOMETER=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "HEATSHRINK_DYNAMIC_ALLOC=0"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "MAVLINK_UDP=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "MODULE_NAME=\"px4\""
+				},
+				{
+					"backtrace" : 4,
+					"define" : "PARAM_NO_AUTOSAVE=0"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "PARAM_NO_ORB=0"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "PX4_BOARD_LABEL=\"\""
+				},
+				{
+					"backtrace" : 4,
+					"define" : "PX4_BOARD_NAME=\"px4_android\""
+				},
+				{
+					"backtrace" : 4,
+					"define" : "__PX4_ANDROID"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "__PX4_LINUX"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "__PX4_POSIX"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "__STDC_FORMAT_MACROS"
+				},
+				{
+					"define" : "px4phone_native_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/generated"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/generated/parameters"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/generated/events"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/lib"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/lib/matrix"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/lib/slew_rate"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/lib/heatshrink/heatshrink"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/mc_att_control/AttitudeControl"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/lib/control_allocation/actuator_effectiveness"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/lib/control_allocation/control_allocation"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/control_allocator/VehicleActuatorEffectiveness"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/generated/mixer_module"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/drivers"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/platforms"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/platforms/posix/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/platforms/common/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/platforms/common/uORB"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/platforms/common"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/platforms/posix/src/px4/generic/generic/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/platforms/posix/src/px4/common/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/mavlink_generated/v2.0"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/mavlink_generated/v2.0/common"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/mavlink_generated/v2.0/minimal"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/mavlink_generated/v2.0/standard"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/mavlink_generated/v2.0/development"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/mavlink_generated/v2.0/uAvionix"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/mavlink"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/ekf2"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/ekf2/EKF"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/sensors"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/load_mon"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/simulation/simulator_mavlink"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/ekf2/EKF/python"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/flight_mode_manager"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/flight_mode_manager/tasks/FlightTask"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/flight_mode_manager/tasks/Auto"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/flight_mode_manager/tasks/AutoFollowTarget"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/flight_mode_manager/tasks/AutoFollowTarget/follow_target_estimator"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/flight_mode_manager/tasks/AltitudeCruise"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/flight_mode_manager/tasks/Descend"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/flight_mode_manager/tasks/Failsafe"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/flight_mode_manager/tasks/ManualAcceleration"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/flight_mode_manager/tasks/ManualAccelerationSlow"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/flight_mode_manager/tasks/ManualAltitude"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/flight_mode_manager/tasks/ManualAltitudeSmoothVel"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/flight_mode_manager/tasks/ManualPosition"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/flight_mode_manager/tasks/Orbit"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/flight_mode_manager/tasks/Transition"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/flight_mode_manager/tasks/Utility"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/mc_pos_control/PositionControl"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/mc_pos_control/GotoControl"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/navigator/GeofenceBreachAvoidance"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/lib/motion_planning"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/mc_pos_control/Takeoff"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/lib/drivers/accelerometer"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/lib/drivers/gyroscope"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/lib/drivers/magnetometer"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/lib/drivers/device"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/lib/version"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/lib/timesync"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/lib/tunes"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/modules/navigator/MissionFeasibility"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/lib/weather_vane"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/lib/variable_length_ringbuffer"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/drivers/gps"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/PX4-Autopilot/src/drivers/gps/devices/src"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/libusb_src/libusb"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/libusb_src/libusb/os"
+				}
+			],
+			"language" : "C",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "11"
+			},
+			"sourceIndexes" : 
+			[
+				267,
+				268,
+				269,
+				270,
+				271,
+				272,
+				273,
+				274,
+				275,
+				276,
+				277,
+				278,
+				279,
+				280,
+				475,
+				528,
+				563,
+				564,
+				574,
+				578
+			],
+			"sysroot" : 
+			{
+				"path" : "/home/ash/Android/Sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
+			}
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "usb1.0::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "px4phone_native::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-shared",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-llog",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-landroid",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-latomic",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-lm",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-lz",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "libusb1.0.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-llog",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-latomic -lm",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX",
+		"sysroot" : 
+		{
+			"path" : "/home/ash/Android/Sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
+		}
+	},
+	"name" : "px4phone_native",
+	"nameOnDisk" : "libpx4phone_native.so",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				104,
+				105,
+				106,
+				107,
+				108,
+				109,
+				110,
+				111,
+				112,
+				113,
+				114,
+				115,
+				116,
+				117,
+				118,
+				119,
+				120,
+				121,
+				122,
+				123,
+				124,
+				125,
+				126,
+				127,
+				128,
+				129,
+				130,
+				131,
+				132,
+				133,
+				134,
+				135,
+				136,
+				137,
+				138,
+				139,
+				140,
+				141,
+				142,
+				143,
+				144,
+				145,
+				146,
+				147,
+				148,
+				149,
+				150,
+				151,
+				152,
+				153,
+				154,
+				155,
+				156,
+				157,
+				158,
+				159,
+				160,
+				161,
+				162,
+				163,
+				164,
+				165,
+				166,
+				167,
+				168,
+				169,
+				170,
+				171,
+				172,
+				173,
+				174,
+				175,
+				176,
+				177,
+				178,
+				179,
+				180,
+				181,
+				182,
+				183,
+				184,
+				185,
+				186,
+				187,
+				188,
+				189,
+				190,
+				191,
+				192,
+				193,
+				194,
+				195,
+				196,
+				197,
+				198,
+				199,
+				200,
+				201,
+				202,
+				203,
+				204,
+				205,
+				206,
+				207,
+				208,
+				209,
+				210,
+				211,
+				212,
+				213,
+				214,
+				215,
+				216,
+				217,
+				218,
+				219,
+				220,
+				221,
+				222,
+				223,
+				224,
+				225,
+				226,
+				227,
+				228,
+				229,
+				230,
+				231,
+				232,
+				233,
+				234,
+				235,
+				236,
+				237,
+				238,
+				239,
+				240,
+				241,
+				242,
+				243,
+				244,
+				245,
+				246,
+				247,
+				248,
+				249,
+				250,
+				251,
+				252,
+				253,
+				254,
+				255,
+				256,
+				257,
+				258,
+				259,
+				260,
+				261,
+				262,
+				263,
+				264,
+				265,
+				266,
+				267,
+				268,
+				269,
+				270,
+				271,
+				272,
+				273,
+				274,
+				275,
+				276,
+				277,
+				278,
+				279,
+				280,
+				281,
+				282,
+				283,
+				284,
+				285,
+				286,
+				287,
+				288,
+				289,
+				290,
+				291,
+				292,
+				293,
+				294,
+				295,
+				296,
+				297,
+				298,
+				299,
+				300,
+				301,
+				302,
+				303,
+				304,
+				305,
+				306,
+				307,
+				308,
+				309,
+				310,
+				311,
+				312,
+				313,
+				314,
+				315,
+				316,
+				317,
+				318,
+				319,
+				320,
+				321,
+				322,
+				323,
+				324,
+				325,
+				326,
+				327,
+				328,
+				329,
+				330,
+				331,
+				332,
+				333,
+				334,
+				335,
+				336,
+				337,
+				338,
+				339,
+				340,
+				341,
+				342,
+				343,
+				344,
+				345,
+				346,
+				347,
+				348,
+				349,
+				350,
+				351,
+				352,
+				353,
+				354,
+				355,
+				356,
+				357,
+				358,
+				359,
+				360,
+				361,
+				362,
+				363,
+				364,
+				365,
+				366,
+				367,
+				368,
+				369,
+				370,
+				371,
+				372,
+				373,
+				374,
+				375,
+				376,
+				377,
+				378,
+				379,
+				380,
+				381,
+				382,
+				383,
+				384,
+				385,
+				386,
+				387,
+				388,
+				389,
+				390,
+				391,
+				392,
+				393,
+				394,
+				395,
+				396,
+				397,
+				398,
+				399,
+				400,
+				401,
+				402,
+				403,
+				404,
+				405,
+				406,
+				407,
+				408,
+				409,
+				410,
+				411,
+				412,
+				413,
+				414,
+				415,
+				416,
+				417,
+				418,
+				419,
+				420,
+				421,
+				422,
+				423,
+				424,
+				425,
+				426,
+				427,
+				428,
+				429,
+				430,
+				431,
+				432,
+				433,
+				434,
+				435,
+				436,
+				437,
+				438,
+				439,
+				440,
+				441,
+				442,
+				443,
+				444,
+				445,
+				446,
+				447,
+				448,
+				449,
+				450,
+				451,
+				452,
+				453,
+				454,
+				455,
+				456,
+				457,
+				458,
+				459,
+				460,
+				461,
+				462,
+				463,
+				464,
+				465,
+				466,
+				467,
+				468,
+				469,
+				470,
+				471,
+				472,
+				473,
+				474,
+				475,
+				476,
+				477,
+				478,
+				479,
+				480,
+				481,
+				482,
+				483,
+				484,
+				485,
+				486,
+				487,
+				488,
+				489,
+				490,
+				491,
+				492,
+				493,
+				494,
+				495,
+				496,
+				497,
+				498,
+				499,
+				500,
+				501,
+				502,
+				503,
+				504,
+				505,
+				506,
+				507,
+				508,
+				509,
+				510,
+				511,
+				512,
+				513,
+				514,
+				515,
+				516,
+				517,
+				518,
+				519,
+				520,
+				521,
+				522,
+				523,
+				524,
+				525,
+				526,
+				527,
+				528,
+				529,
+				530,
+				531,
+				532,
+				533,
+				534,
+				535,
+				536,
+				537,
+				538,
+				539,
+				540,
+				541,
+				542,
+				543,
+				544,
+				545,
+				546,
+				547,
+				548,
+				549,
+				550,
+				551,
+				552,
+				553,
+				554,
+				555,
+				556,
+				557,
+				558,
+				559,
+				560,
+				561,
+				562,
+				563,
+				564,
+				565,
+				566,
+				567,
+				568,
+				569,
+				570,
+				571,
+				572,
+				573,
+				574,
+				575,
+				576,
+				577,
+				578,
+				579,
+				580,
+				581,
+				582,
+				583,
+				584,
+				585,
+				586,
+				587,
+				588,
+				589
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "px4_jni.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "native_sensor_reader.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "android_uorb_publishers.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "mavlink_tcp_bridge.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "gps_usb_ubx.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "mavlink_pty_usb_bridge.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "arduino_pty_usb_bridge.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "arduino_output.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "apps.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/action_request.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/actuator_armed.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/actuator_controls_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/actuator_motors.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/actuator_outputs.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/actuator_servos.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/actuator_servos_trim.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/actuator_test.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/adc_report.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/airspeed.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/airspeed_validated.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/airspeed_wind.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/arming_check_reply.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/arming_check_request.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/autotune_attitude_control_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/battery_info.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/battery_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/button_event.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/camera_capture.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/camera_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/camera_trigger.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/can_interface_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/cellular_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/collision_constraints.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/config_overrides.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/control_allocator_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/cpuload.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/dataman_request.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/dataman_response.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/debug_array.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/debug_key_value.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/debug_value.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/debug_vect.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/differential_pressure.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/distance_sensor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/distance_sensor_mode_change_request.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/dronecan_node_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/ekf2_timestamps.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/esc_report.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/esc_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/estimator_aid_source1d.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/estimator_aid_source2d.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/estimator_aid_source3d.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/estimator_bias.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/estimator_bias3d.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/estimator_event_flags.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/estimator_gps_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/estimator_innovations.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/estimator_selector_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/estimator_sensor_bias.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/estimator_states.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/estimator_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/estimator_status_flags.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/event.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/failsafe_flags.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/failure_detector_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/figure_eight_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/fixed_wing_lateral_guidance_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/fixed_wing_lateral_setpoint.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/fixed_wing_lateral_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/fixed_wing_longitudinal_setpoint.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/fixed_wing_runway_control.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/flight_phase_estimation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/follow_target.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/follow_target_estimator.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/follow_target_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/fuel_tank_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/gain_compression.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/generator_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/geofence_result.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/geofence_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/gimbal_controls.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/gimbal_device_attitude_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/gimbal_device_information.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/gimbal_device_set_attitude.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/gimbal_manager_information.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/gimbal_manager_set_attitude.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/gimbal_manager_set_manual_control.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/gimbal_manager_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/goto_setpoint.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/gpio_config.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/gpio_in.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/gpio_out.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/gpio_request.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/gps_dump.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/gps_inject_data.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/gripper.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/health_report.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/heater_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/home_position.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/hover_thrust_estimate.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/input_rc.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/internal_combustion_engine_control.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/internal_combustion_engine_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/iridiumsbd_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/irlock_report.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/landing_gear.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/landing_gear_wheel.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/landing_target_innovations.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/landing_target_pose.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/lateral_control_configuration.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/launch_detection_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/led_control.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/log_message.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/logger_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/longitudinal_control_configuration.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/mag_worker_data.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/magnetometer_bias_estimate.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/manual_control_setpoint.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/manual_control_switches.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/mavlink_log.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/mavlink_tunnel.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/message_format_request.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/message_format_response.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/mission.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/mission_result.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/mode_completed.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/mount_orientation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/navigator_mission_item.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/navigator_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/neural_control.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/normalized_unsigned_setpoint.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/obstacle_distance.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/offboard_control_mode.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/onboard_computer_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/open_drone_id_arm_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/open_drone_id_operator_id.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/open_drone_id_self_id.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/open_drone_id_system.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/orb_test.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/orb_test_large.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/orb_test_medium.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/orbit_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/parameter_reset_request.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/parameter_set_used_request.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/parameter_set_value_request.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/parameter_set_value_response.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/parameter_update.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/ping.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/position_controller_landing_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/position_controller_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/position_setpoint.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/position_setpoint_triplet.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/power_button_state.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/power_monitor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/pps_capture.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/pure_pursuit_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/pwm_input.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/px4io_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/qshell_req.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/qshell_retval.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/radio_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/rate_ctrl_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/rc_channels.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/rc_parameter_map.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/register_ext_component_reply.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/register_ext_component_request.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/rocket_gnc_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/rover_attitude_setpoint.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/rover_attitude_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/rover_position_setpoint.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/rover_rate_setpoint.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/rover_rate_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/rover_speed_setpoint.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/rover_speed_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/rover_steering_setpoint.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/rover_throttle_setpoint.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/rpm.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/rtl_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/rtl_time_estimate.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/satellite_info.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/sensor_accel.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/sensor_accel_fifo.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/sensor_airflow.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/sensor_baro.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/sensor_combined.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/sensor_correction.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/sensor_gnss_relative.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/sensor_gnss_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/sensor_gps.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/sensor_gyro.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/sensor_gyro_fft.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/sensor_gyro_fifo.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/sensor_hygrometer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/sensor_mag.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/sensor_optical_flow.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/sensor_preflight_mag.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/sensor_selection.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/sensor_temp.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/sensor_uwb.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/sensors_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/sensors_status_imu.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/system_power.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/takeoff_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/task_stack_info.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/tecs_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/telemetry_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/tiltrotor_extra_controls.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/timesync_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/trajectory_setpoint.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/trajectory_setpoint6dof.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/transponder_report.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/tune_control.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/uORBMessageFieldsGenerated.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/uORBTopics.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/uavcan_parameter_request.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/uavcan_parameter_value.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/ulog_stream.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/ulog_stream_ack.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/unregister_ext_component.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/vehicle_acceleration.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/vehicle_air_data.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/vehicle_angular_acceleration_setpoint.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/vehicle_angular_velocity.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/vehicle_attitude.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/vehicle_attitude_setpoint.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/vehicle_command.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/vehicle_command_ack.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/vehicle_constraints.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/vehicle_control_mode.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/vehicle_global_position.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/vehicle_imu.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/vehicle_imu_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/vehicle_land_detected.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/vehicle_local_position.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/vehicle_local_position_setpoint.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/vehicle_magnetometer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/vehicle_odometry.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/vehicle_optical_flow.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/vehicle_optical_flow_vel.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/vehicle_rates_setpoint.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/vehicle_roi.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/vehicle_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/vehicle_thrust_setpoint.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/vehicle_torque_setpoint.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/velocity_limits.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/vtol_vehicle_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/wheel_encoders.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/wind.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated_uorb_topics/yaw_estimator_status.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/generated/FlightTasks_generated.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/platforms/common/uORB/uORBManager.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/platforms/common/uORB/uORBDeviceMaster.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/platforms/common/uORB/uORBDeviceNode.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/platforms/common/uORB/SubscriptionInterval.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/platforms/common/uORB/uORB.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/platforms/common/uORB/uORBUtils.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/platforms/common/uORB/Subscription.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/platforms/common/px4_log.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/platforms/common/module.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/platforms/common/px4_cli.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/platforms/common/shutdown.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/platforms/common/external_reset_lockout.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/platforms/common/px4_log_history.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/platforms/common/uORB/uORBMessageFields.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/platforms/common/px4_work_queue/WorkQueueManager.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/platforms/common/px4_work_queue/WorkItem.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/platforms/common/px4_work_queue/ScheduledWorkItem.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "PX4-Autopilot/platforms/common/work_queue/dq_addlast.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "PX4-Autopilot/platforms/common/work_queue/dq_rem.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "PX4-Autopilot/platforms/common/work_queue/dq_remfirst.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "PX4-Autopilot/platforms/common/work_queue/hrt_queue.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "PX4-Autopilot/platforms/common/work_queue/hrt_thread.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "PX4-Autopilot/platforms/common/work_queue/hrt_work_cancel.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "PX4-Autopilot/platforms/common/work_queue/queue.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "PX4-Autopilot/platforms/common/work_queue/sq_addafter.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "PX4-Autopilot/platforms/common/work_queue/sq_addlast.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "PX4-Autopilot/platforms/common/work_queue/sq_remfirst.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "PX4-Autopilot/platforms/common/work_queue/work_cancel.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "PX4-Autopilot/platforms/common/work_queue/work_lock.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "PX4-Autopilot/platforms/common/work_queue/work_queue.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "PX4-Autopilot/platforms/common/work_queue/work_thread.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/platforms/posix/src/px4/common/drv_hrt.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/platforms/posix/src/px4/common/tasks.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/platforms/posix/src/px4/common/px4_daemon/server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/platforms/posix/src/px4/common/px4_daemon/client.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/platforms/posix/src/px4/common/px4_daemon/sock_protocol.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/platforms/posix/src/px4/common/px4_daemon/pxh.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/platforms/posix/src/px4/common/px4_daemon/history.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/platforms/posix/src/px4/common/px4_daemon/server_io.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/platforms/posix/src/px4/common/px4_init.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/platforms/posix/src/px4/common/px4_posix_impl.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/platforms/posix/src/px4/common/px4_sem.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/platforms/posix/src/px4/common/cpuload.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/platforms/posix/src/px4/common/print_load.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/parameters/parameters.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/parameters/autosave.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/parameters/atomic_transaction.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF2.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF2Selector.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF/control.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF/covariance.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF/ekf.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF/ekf_helper.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF/estimator_interface.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF/height_control.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF/position_fusion.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF/velocity_fusion.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF/yaw_fusion.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF/bias_estimator/bias_estimator.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF/imu_down_sampler/imu_down_sampler.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF/output_predictor/output_predictor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF/yaw_estimator/EKFGSF_yaw.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/sensors/sensors.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/sensors/vehicle_acceleration/VehicleAcceleration.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/sensors/vehicle_air_data/VehicleAirData.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/sensors/vehicle_angular_velocity/VehicleAngularVelocity.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/sensors/vehicle_gps_position/PpsTimeSync.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/sensors/vehicle_gps_position/VehicleGPSPosition.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/sensors/vehicle_gps_position/gps_blending.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/sensors/vehicle_imu/VehicleIMU.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/sensors/vehicle_magnetometer/VehicleMagnetometer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/sensors/vehicle_optical_flow/VehicleOpticalFlow.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/sensors/voted_sensors_update.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/Arming/ArmAuthorization/ArmAuthorization.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/Commander.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/HealthAndArmingChecks/Common.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/HealthAndArmingChecks/HealthAndArmingChecks.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/HealthAndArmingChecks/checks/accelerometerCheck.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/HealthAndArmingChecks/checks/airspeedCheck.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/HealthAndArmingChecks/checks/armPermissionCheck.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/HealthAndArmingChecks/checks/baroCheck.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/HealthAndArmingChecks/checks/batteryCheck.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/HealthAndArmingChecks/checks/cpuResourceCheck.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/HealthAndArmingChecks/checks/distanceSensorChecks.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/HealthAndArmingChecks/checks/escCheck.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/HealthAndArmingChecks/checks/estimatorCheck.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/HealthAndArmingChecks/checks/externalChecks.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/HealthAndArmingChecks/checks/failureDetectorCheck.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/HealthAndArmingChecks/checks/flightTimeCheck.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/HealthAndArmingChecks/checks/geofenceCheck.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/HealthAndArmingChecks/checks/gyroCheck.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/HealthAndArmingChecks/checks/homePositionCheck.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/HealthAndArmingChecks/checks/imuConsistencyCheck.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/HealthAndArmingChecks/checks/loggerCheck.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/HealthAndArmingChecks/checks/magnetometerCheck.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/HealthAndArmingChecks/checks/manualControlCheck.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/HealthAndArmingChecks/checks/missionCheck.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/HealthAndArmingChecks/checks/modeCheck.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/HealthAndArmingChecks/checks/navigatorCheck.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/HealthAndArmingChecks/checks/offboardCheck.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/HealthAndArmingChecks/checks/openDroneIDCheck.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/HealthAndArmingChecks/checks/opticalFlowCheck.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/HealthAndArmingChecks/checks/parachuteCheck.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/HealthAndArmingChecks/checks/powerCheck.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/HealthAndArmingChecks/checks/rcAndDataLinkCheck.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/HealthAndArmingChecks/checks/rcCalibrationCheck.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/HealthAndArmingChecks/checks/sdcardCheck.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/HealthAndArmingChecks/checks/systemCheck.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/HealthAndArmingChecks/checks/vtolCheck.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/HealthAndArmingChecks/checks/windCheck.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/HomePosition.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/ModeManagement.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/ModeUtil/control_mode.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/ModeUtil/mode_requirements.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/MulticopterThrowLaunch/MulticopterThrowLaunch.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/Safety.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/UserModeIntention.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/accelerometer_calibration.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/airspeed_calibration.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/baro_calibration.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/calibration_routines.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/commander_helper.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/esc_calibration.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/factory_calibration_storage.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/failsafe/failsafe.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/failsafe/framework.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/failure_detector/FailureDetector.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/failure_detector/FailureInjector.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/gyro_calibration.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/level_calibration.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/lm_fit.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/mag_calibration.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/rc_calibration.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/commander/worker_thread.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/navigator/geofence.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/navigator/land.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/navigator/loiter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/navigator/mission.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/navigator/mission_base.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/navigator/mission_block.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/navigator/mission_feasibility_checker.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/navigator/navigator_main.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/navigator/navigator_mode.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/navigator/precland.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/navigator/rtl.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/navigator/rtl_direct.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/navigator/rtl_direct_mission_land.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/navigator/rtl_mission_fast.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/navigator/rtl_mission_fast_reverse.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/navigator/takeoff.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/navigator/vtol_takeoff.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/mavlink/MavlinkStatustextHandler.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/mavlink/mavlink_command_sender.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/mavlink/mavlink_events.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/mavlink/mavlink_ftp.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/mavlink/mavlink_log_handler.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/mavlink/mavlink_main.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/mavlink/mavlink_messages.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/mavlink/mavlink_mission.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/mavlink/mavlink_parameters.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/mavlink/mavlink_rate_limiter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/mavlink/mavlink_receiver.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/mavlink/mavlink_shell.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/mavlink/mavlink_simple_analyzer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/mavlink/mavlink_stream.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/mavlink/mavlink_timesync.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/mavlink/mavlink_ulog.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/mavlink/tune_publisher.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/logger/log_writer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/logger/log_writer_file.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/logger/log_writer_mavlink.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/logger/logged_topics.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/logger/logger.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/logger/util.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/logger/watchdog.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/load_mon/LoadMon.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/land_detector/AirshipLandDetector.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/land_detector/FixedwingLandDetector.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/land_detector/LandDetector.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/land_detector/MulticopterLandDetector.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/land_detector/RoverLandDetector.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/land_detector/VtolLandDetector.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/land_detector/land_detector_main.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/flight_mode_manager/FlightModeManager.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/flight_mode_manager/tasks/AltitudeCruise/FlightTaskAltitudeCruise.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/flight_mode_manager/tasks/Auto/FlightTaskAuto.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/flight_mode_manager/tasks/AutoFollowTarget/FlightTaskAutoFollowTarget.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/flight_mode_manager/tasks/AutoFollowTarget/follow_target_estimator/TargetEstimator.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/flight_mode_manager/tasks/Descend/FlightTaskDescend.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/flight_mode_manager/tasks/Failsafe/FlightTaskFailsafe.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/flight_mode_manager/tasks/FlightTask/FlightTask.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/flight_mode_manager/tasks/ManualAcceleration/FlightTaskManualAcceleration.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/flight_mode_manager/tasks/ManualAccelerationSlow/FlightTaskManualAccelerationSlow.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/flight_mode_manager/tasks/ManualAltitude/FlightTaskManualAltitude.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/flight_mode_manager/tasks/ManualAltitudeSmoothVel/FlightTaskManualAltitudeSmoothVel.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/flight_mode_manager/tasks/ManualPosition/FlightTaskManualPosition.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/flight_mode_manager/tasks/Orbit/FlightTaskOrbit.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/flight_mode_manager/tasks/Transition/FlightTaskTransition.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/flight_mode_manager/tasks/Utility/Gimbal.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/flight_mode_manager/tasks/Utility/StickAccelerationXY.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/flight_mode_manager/tasks/Utility/StickTiltXY.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/manual_control/ManualControl.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/manual_control/ManualControlSelector.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/mc_att_control/mc_att_control_main.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/mc_pos_control/MulticopterPositionControl.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/mc_rate_control/MulticopterRateControl.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/fw_att_control/FixedwingAttitudeControl.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/fw_att_control/fw_pitch_controller.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/fw_att_control/fw_roll_controller.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/fw_att_control/fw_wheel_controller.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/fw_att_control/fw_yaw_controller.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/fw_rate_control/FixedwingRateControl.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/control_allocator/ControlAllocator.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/geo/geo.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/mixer_module/mixer_module.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/cdev/CDev.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/perf/perf_counter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/sensor_calibration/Accelerometer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/sensor_calibration/Barometer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/sensor_calibration/Gyroscope.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/sensor_calibration/Magnetometer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/sensor_calibration/Utilities.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/systemlib/mavlink_log.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/hysteresis/hysteresis.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/lat_lon_alt/lat_lon_alt.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "PX4-Autopilot/src/lib/heatshrink/heatshrink/heatshrink_decoder.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/sensors/data_validator/DataValidator.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/sensors/data_validator/DataValidatorGroup.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF/aid_sources/ZeroGyroUpdate.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF/aid_sources/ZeroVelocityUpdate.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF/aid_sources/airspeed/airspeed_fusion.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF/aid_sources/aux_global_position/aux_global_position.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF/aid_sources/auxvel/auxvel_fusion.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF/aid_sources/barometer/baro_height_control.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF/aid_sources/drag/drag_fusion.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF/aid_sources/external_vision/ev_control.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF/aid_sources/external_vision/ev_height_control.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF/aid_sources/external_vision/ev_pos_control.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF/aid_sources/external_vision/ev_vel_control.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF/aid_sources/external_vision/ev_yaw_control.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF/aid_sources/fake_height_control.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF/aid_sources/fake_pos_control.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF/aid_sources/gnss/gnss_checks.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF/aid_sources/gnss/gnss_height_control.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF/aid_sources/gnss/gnss_yaw_control.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF/aid_sources/gnss/gps_control.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF/aid_sources/gravity/gravity_fusion.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF/aid_sources/magnetometer/mag_control.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF/aid_sources/magnetometer/mag_fusion.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF/aid_sources/optical_flow/optical_flow_control.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF/aid_sources/optical_flow/optical_flow_fusion.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF/aid_sources/range_finder/range_finder_consistency_check.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF/aid_sources/range_finder/range_height_control.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF/aid_sources/range_finder/range_height_fusion.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF/aid_sources/range_finder/sensor_range_finder.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF/aid_sources/sideslip/sideslip_fusion.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF/aid_sources/zero_innovation_heading_update.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF/wind.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/ekf2/EKF/terrain_control.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/events/events.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/platforms/common/px4_work_queue/WorkQueue.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/cdev/posix/cdev_platform.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/circuit_breaker/circuit_breaker.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/conversion/rotation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/atmosphere/atmosphere.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/dataman_client/DatamanClient.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/rtl/rtl_time_estimator.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/mixer_module/actuator_test.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/systemcmds/actuator_test/actuator_test.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/systemcmds/param/param.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/systemcmds/ver/ver.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/systemcmds/top/top.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/systemcmds/perf/perf.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/systemcmds/topic_listener/listener_main.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/systemcmds/reboot/reboot.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/mc_att_control/AttitudeControl/AttitudeControl.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/stick_yaw/StickYaw.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/tinybson/tinybson.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "PX4-Autopilot/platforms/common/px4_getopt.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/control_allocator/VehicleActuatorEffectiveness/ActuatorEffectivenessControlSurfaces.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/control_allocator/VehicleActuatorEffectiveness/ActuatorEffectivenessCustom.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/control_allocator/VehicleActuatorEffectiveness/ActuatorEffectivenessFixedWing.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/control_allocator/VehicleActuatorEffectiveness/ActuatorEffectivenessHelicopter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/control_allocator/VehicleActuatorEffectiveness/ActuatorEffectivenessHelicopterCoaxial.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/control_allocator/VehicleActuatorEffectiveness/ActuatorEffectivenessMCTilt.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/control_allocator/VehicleActuatorEffectiveness/ActuatorEffectivenessMultirotor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/control_allocator/VehicleActuatorEffectiveness/ActuatorEffectivenessRotors.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/control_allocator/VehicleActuatorEffectiveness/ActuatorEffectivenessRoverAckermann.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/control_allocator/VehicleActuatorEffectiveness/ActuatorEffectivenessSpacecraft.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/control_allocator/VehicleActuatorEffectiveness/ActuatorEffectivenessStandardVTOL.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/control_allocator/VehicleActuatorEffectiveness/ActuatorEffectivenessTailsitterVTOL.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/control_allocator/VehicleActuatorEffectiveness/ActuatorEffectivenessTiltrotorVTOL.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/control_allocator/VehicleActuatorEffectiveness/ActuatorEffectivenessTilts.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/control_allocator/VehicleActuatorEffectiveness/ActuatorEffectivenessUUV.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/control_allocator/VehicleActuatorEffectiveness/RpmControl.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/control_allocation/control_allocation/ControlAllocation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/control_allocation/control_allocation/ControlAllocationPseudoInverse.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/control_allocation/control_allocation/ControlAllocationSequentialDesaturation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/control_allocation/actuator_effectiveness/ActuatorEffectiveness.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/collision_prevention/CollisionPrevention.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/rate_control/rate_control.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/rate_control/gain_compression.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/pid/PID.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/sticks/Sticks.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/motion_planning/HeadingSmoothing.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/motion_planning/ManualVelocitySmoothingXY.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/motion_planning/ManualVelocitySmoothingZ.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/motion_planning/PositionSmoothing.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/motion_planning/VelocitySmoothing.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/mc_pos_control/PositionControl/PositionControl.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/mc_pos_control/PositionControl/ControlMath.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/navigator/GeofenceBreachAvoidance/geofence_breach_avoidance.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/collision_prevention/ObstacleMath.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "PX4-Autopilot/src/modules/mavlink/mavlink.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "PX4-Autopilot/platforms/posix/src/px4/common/lib_crc32.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/mc_pos_control/GotoControl/GotoControl.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/drivers/accelerometer/PX4Accelerometer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/drivers/gyroscope/PX4Gyroscope.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/drivers/magnetometer/PX4Magnetometer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/mc_pos_control/Takeoff/Takeoff.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/timesync/Timesync.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/tunes/tunes.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/variable_length_ringbuffer/VariableLengthRingbuffer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/weather_vane/WeatherVane.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "PX4-Autopilot/src/lib/version/version.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/navigator/MissionFeasibility/FeasibilityChecker.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/ringbuffer/Ringbuffer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/tunes/default_tunes.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "PX4-Autopilot/platforms/common/board_identity.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/drivers/gps/devices/src/ubx.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/drivers/gps/devices/src/gps_helper.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/drivers/gps/devices/src/rtcm.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/drivers/gps/devices/src/crc.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/world_magnetic_model/geo_mag_declination.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/mavlink/open_drone_id_translations.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/lib/parameters/param_translation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/systemcmds/uorb/uorb.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/dataman/dataman.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/simulation/pwm_out_sim/PWMSim.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "PX4-Autopilot/src/modules/simulation/simulator_mavlink/SimulatorMavlink.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

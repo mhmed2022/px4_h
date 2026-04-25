@@ -1,0 +1,129 @@
+# Role: Senior C++ & Embedded Systems Developer (PX4 Expert)
+
+# Context:
+I have an Android Studio project that runs PX4-Autopilot natively on an Android device.
+Current PX4 Version: v1.17.0-alpha1 (Strictly required: DO NOT change the version).
+Current State: The project is currently heavily modified to support a "Rocket" control system.
+   - It contains custom modules: `rocket_gnc`, `xqpower_can`, `servo_usb_output`.
+   - It is MISSING standard drone modules like `pwm_out` (drivers/pwm_out).
+   - It has Android-specific patches (`__PX4_ANDROID`) to fix real-time scheduling and logging issues on Android NDK.
+
+# Goal:
+Clean the project to restore it to a "Standard PX4" configuration for Drones/Quadcopters.
+We want to remove ALL Rocket logic and RESTORE standard motor output (pwm_out) while maintaining the exact same PX4 version (v1.17.0-alpha1).
+
+# Instructions & Action Plan:
+
+## Phase 1: Android Compatibility Patches (Critical)
+Since v1.17.0 is a development branch, Android patches must be carefully reconciled with the latest upstream code.
+1. Locate and compare these files between the official PX4 v1.17.0 source and my local copy:
+   - `platforms/common/px4_log.cpp`: Ensure `logcat` integration exists.
+   - `platforms/common/px4_work_queue/WorkQueueManager.cpp`: Ensure Android uses `SCHED_OTHER` (0 priority) instead of `SCHED_FIFO`.
+   - `platforms/posix/src/px4/common/tasks.cpp`: Ensure `pthread_cancel` is replaced with `pthread_kill` for Android.
+   - `platforms/common/shutdown.cpp`: Ensure soft restart works on Android.
+2. If these patches are missing or broken due to upstream changes, re-apply them using `#ifdef __PX4_ANDROID`.
+
+## Phase 2: Purge Rocket Modules
+Identify and DELETE the following directories/files completely:
+1. `src/modules/rocket_gnc` (All source code and headers).
+2. `src/drivers/xqpower_can` (All source code and headers).
+3. `AndroidApp/app/src/main/cpp/servo_usb_output.*` (Custom servo driver).
+4. Remove these Airframes from `ROMFS/px4fmu_common/init.d/airframes/`:
+   - `22000_m130_rocket`
+   - `22001_m130_rocket_hitl`
+   - `22002_m130_rocket_real`
+
+## Phase 3: Restore Standard Drone Outputs (The most important fix)
+The project currently lacks the ability to drive standard ESCs.
+1. Verify that `src/drivers/pwm_out` exists and is intact.
+2. Add `pwm_out` support to the build:
+   - In `CMakeLists.txt`: Add `${PX4_ROOT}/src/drivers/pwm_out/PWMOut.cpp` to the source list.
+   - In `apps.cpp`: Add `extern "C" int pwm_out_main(...)` and register it in the app map: `apps["pwm_out"] = pwm_out_main;`.
+
+## Phase 4: Cleanup Build Configuration
+1. Open `CMakeLists.txt`:
+   - Remove ALL references to `rocket_gnc`, `xqpower_can`, `servo_usb_output`, and `pwm_out_sim` (keep pwm_out_sim only if needed for SITL/HITL, but ensure pwm_out is primary).
+   - Ensure standard modules are included (`mc_att_control`, `mc_pos_control`, `control_allocator`, `pwm_out`).
+2. Open `apps.cpp`:
+   - Remove `rocket_gnc_main` and `xqpower_can_main` references.
+
+## Phase 5: Verification
+Ensure the final state looks like this:
+- No references to "Rocket" or "M130" remain.
+- `pwm_out` is registered and compiles.
+- Standard Quadcopter airframes (e.g., `4001_quad_x`) are available in the init.d folder.
+- Android patches (`__PX4_ANDROID`) are applied to the v1.17.0 codebase without syntax errors.
+
+# Deliverables:
+Please provide the modified content for:
+1. `CMakeLists.txt` (The cleaned build script).
+2. `apps.cpp` (The cleaned module registry).
+3. A list of the files you recommend deleting.
+4. Any Android-specific patches you had to re-apply manually for v1.17.0 compatibility.
+
+
+===
+
+
+# Additional Constraints & Architecture Details:
+
+## Phase 6: Build Automation (Crucial)
+Do NOT rely on manual code generation. You must ensure the `CMakeLists.txt` is configured to automatically trigger the PX4 build scripts to generate required files during the build process:
+1. **uORB Topics:** Must auto-generate from `${PX4_ROOT}/msg/*.msg` files.
+2. **MAVLink Headers:** Must auto-generate from XML definitions.
+3. **Parameters:** Must auto-generate `px4_parameters.hpp` from param definitions.
+4. **Git Version:** Must auto-generate build version headers.
+*Instruction:* Check the CMake commands in the "Clean Source" and ensure they are correctly ported to the Android build script without skipping any generation steps.
+
+## Phase 7: Source Code Reference & "No Hallucination" Rule
+1. **Reference Material:** I will provide a "Clean PX4-Autopilot v1.17.0" source folder. You MUST base your code on this clean version.
+2. **No Fake Code:** Do NOT write code from scratch unless it is the specific Arduino communication logic mentioned below. If a driver or module is missing, point to where it exists in the Clean Source rather than inventing it.
+3. **Preserve Team Work:** The previous team successfully implemented "External GPS" and "Radio Telemetry" (via Mavlink/MAVLink Router). DO NOT remove these. Keep all valid non-rocket features.
+
+## Phase 8: Hardware Output Architecture (Arduino Middleware)
+The output is NOT direct PWM to ESCs.
+1. **Communication Flow:** PX4 (Android App) ---> USB Serial ---> Arduino Board ---> ESCs.
+2. **Requirement:** We need a data link over USB.
+   - Ensure the Android build allows USB Host/Device communication.
+   - If `pwm_out` is not used, ensure we have a mechanism (like a Mavlink instance on USB or a custom driver) to send actuator commands to the Arduino via USB.
+   - *Note:* We do NOT need `pwm_out` to drive motors directly, but we need the *data pipeline* to reach the Arduino.
+
+## Phase 9: Strict Comparison & Verification (Diff Check)
+Before providing the final code, perform a strict comparison:
+1. **Compare:** `Current Android Project` vs `Clean Source (v1.17)`.
+2. **Identify Missing Critical Fixes:** If the Current Project has specific Android hacks (like the JNI bridges, specific CMake flags, or logcat redirections) that are missing in the Clean Source, you MUST identify them and ensure they are integrated into the new build.
+3. **Scope of Deletion:** STRICTLY remove ONLY the Rocket system (`rocket_gnc`, `xqpower_can`, related airframes). Do not remove standard drone modules or the Arduino/Telemetry logic unless it is explicitly broken.
+
+## Deliverables Updated:
+- `CMakeLists.txt` (With auto-generation and Arduino USB logic).
+- `apps.cpp` (Rocket removed, but standard modules + Telemetry + Arduino bridge kept).
+- `Diff Report`: A summary of what was kept from the old project to ensure Android compatibility with v1.17.
+
+==
+
+# STRICT DEVELOPMENT RULES & WORKFLOW:
+
+## Rule 1: Assumption of Necessity (Inclusive Approach)
+- **NEVER** assume a module, driver, or parameter is "unneeded" just because we haven't used it yet.
+- **Default Assumption:** "We WILL need this."
+- If a module exists in the Clean PX4 Source, IT MUST BE INCLUDED in the build.
+- We only exclude something if it technically conflicts with the Android build system (e.g., requires hardware not present like a specific flight controller chip that Android doesn't have).
+
+## Rule 2: Deletion Policy (Zero Deletions without Approval)
+- You are FORBIDDEN from deleting any standard PX4 functionality (like `pwm_out`, `gps`, `telemetry`, `navigator`) without my explicit permission.
+- If you find a conflict that forces you to remove a standard module, STOP and ask me: "Module X conflicts with Android. Shall I remove it?"
+- We do not strip down the system; we adapt the system to fit Android.
+
+## Rule 3: Maximalist Build (Build Everything)
+- The goal is a comprehensive, full-featured PX4 port.
+- **Generate EVERYTHING:** All uORB topics, all parameters, all MAVLink headers, and all system commands must be generated and included.
+- Do not optimize for size at the cost of missing features. If it compiles, it goes in.
+
+## Rule 4: Step-by-Step Iterative Workflow (CRITICAL)
+- **DO NOT** output the entire project at once.
+- **Step 1:** Analyze the "Clean Source" vs. "Current Project" and present a detailed "Gap Analysis Report" (what is missing, what is extra). WAIT for my confirmation.
+- **Step 2:** Update `CMakeLists.txt` with generation logic and source lists. WAIT for my confirmation.
+- **Step 3:** Update `apps.cpp` and Android patches. WAIT for my confirmation.
+- **Step 4:** specific driver integration (Arduino/USB). WAIT for my confirmation.
+- **Proceed only when I say "Next" or "Approved".**
+

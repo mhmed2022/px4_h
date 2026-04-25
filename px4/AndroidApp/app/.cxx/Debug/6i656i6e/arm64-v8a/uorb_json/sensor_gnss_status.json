@@ -1,0 +1,10 @@
+
+
+{
+		"fields": "\u0089 timestamp;\u0088 device_id;\u008c quality_available;\u0086 quality_corrections;\u0086 quality_receiver;\u0086 quality_gnss_signals;\u0086 quality_post_processing;\u0086[7] _padding0;",
+		"fields_total_length": 196,
+		"orb_ids": [230],
+		"main_orb_id": 230,
+		"dependencies": [],
+		"name": "px4/SensorGnssStatus"
+}

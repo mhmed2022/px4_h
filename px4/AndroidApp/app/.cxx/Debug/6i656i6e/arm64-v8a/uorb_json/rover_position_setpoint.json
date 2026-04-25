@@ -1,0 +1,10 @@
+
+
+{
+		"fields": "\u0089 timestamp;\u008a[2] position_ned;\u008a[2] start_ned;\u008a cruising_speed;\u008a arrival_speed;\u008a yaw;\u0086[4] _padding0;",
+		"fields_total_length": 132,
+		"orb_ids": [211],
+		"main_orb_id": 211,
+		"dependencies": [],
+		"name": "px4/RoverPositionSetpoint"
+}

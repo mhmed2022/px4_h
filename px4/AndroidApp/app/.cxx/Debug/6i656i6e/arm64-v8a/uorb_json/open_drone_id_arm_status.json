@@ -1,0 +1,10 @@
+
+
+{
+		"fields": "\u0089 timestamp;\u0086 status;\u008d[50] error;\u0086[5] _padding0;",
+		"fields_total_length": 70,
+		"orb_ids": [167],
+		"main_orb_id": 167,
+		"dependencies": [],
+		"name": "px4/OpenDroneIdArmStatus"
+}

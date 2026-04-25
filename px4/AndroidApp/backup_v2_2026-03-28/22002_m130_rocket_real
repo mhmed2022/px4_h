@@ -1,0 +1,83 @@
+#!/bin/sh
+#
+# @name M130 Rocket Real Sensors (MicoAir H743 + XQPOWER CAN servos)
+#
+# @type Rocket
+# @class Rocket
+#
+# @maintainer Rocket GNC Team
+#
+# Standalone setup for MicoAir H743 with real onboard sensors:
+#   IMU  : BMI088 + BMI270 (SPI)
+#   Baro : DPS310 (I2C)
+#   Mag  : IST8310 (I2C)
+#   Servos: XQPOWER CAN
+#
+# Parameters tuned for rocket_M130_v01_CFD68:
+#   mass_dry=11.11 kg, propellant=1.63 kg, diameter=130 mm
+#   Launch: 16.457degN 44.115degE  alt=1200 m MSL
+#   Target: 3500 m North  (bearing 0deg)
+#
+
+. ${R}etc/init.d/rc.rocket_defaults
+
+# Real hardware -- use onboard sensors, NOT simulation
+param set SYS_HITL 0
+
+# Override simulated sensors from rc.rocket_defaults -- use real hardware
+param set SENS_EN_GPSSIM 0
+param set SENS_EN_BAROSIM 0
+param set SENS_EN_MAGSIM 0
+
+# ---- Magnetometer -- IST8310 present on MicoAir H743 ----
+# MAG_TYPE=6: use mag for yaw initialization on the ground only, then stop fusing.
+# MAG_TYPE=1 (magnetic heading) was wrong here -- it forces mag fusion DURING FLIGHT,
+# which is dangerous at 8g / 450 m/s (motor vibration + body-rate coupling corrupt mag).
+param set EKF2_MAG_TYPE    6    # init-only (overrides MAG_TYPE=5 from rc.rocket_defaults)
+param set SYS_HAS_MAG      1
+param set EKF2_MAG_ACCLIM  30.0 # disable mag fusion above 30 m/s^2 (~3g); default 0.5 is far too low for 8g rocket
+
+# ---- Arming checks for rocket (no RC) ----
+param set COM_RC_IN_MODE 4
+param set COM_ARM_WO_GPS 1
+param set COM_ARM_EKF_POS 0
+param set COM_ARM_EKF_VEL 0
+param set COM_ARM_EKF_HGT 0
+
+# ---- Battery (6S LiPo, MicoAir H743 voltage divider) ----
+param set BAT1_N_CELLS 6
+param set BAT1_V_DIV 74.74
+
+# ---- Rocket GNC parameters (matched to rocket_M130_v01_CFD68 config) ----
+
+# Stage 1: climb to set_alt then transition
+param set ROCKET_SET_ALT   120.0   # target altitude stage 1 (m)
+param set ROCKET_T_STG1     15.0   # motor burn time / end of stage 1 (s)
+param set ROCKET_T_CTRL      0.2   # control start delay after launch (s)
+
+# Guidance -- biased proportional navigation
+param set ROCKET_NPN         2.7   # PN navigation constant  (Npn)
+param set ROCKET_IMP_ANG   -30.0   # terminal impact angle (deg, neg = dive)
+param set ROCKET_TAU_PN1    20.0   # bias time constant (s)
+param set ROCKET_K_YAW    0.008    # yaw guidance gain
+param set ROCKET_K_VZ      14.0   # velocity error gain
+
+# Acceleration limits
+param set ROCKET_AYC_LIM    2.0   # yaw accel limit (g)
+param set ROCKET_APC_LIM    8.0   # pitch accel limit (g)
+
+# Target position in NED (m from launch point)
+param set ROCKET_XTRGT   3000.0   # North (range_m=3000, bearing=0deg)
+param set ROCKET_YTRGT      0.0   # East
+param set ROCKET_ZTRGT      0.0   # Down
+
+# Fin deflection limit  (25 deg = 0.436 rad)
+param set ROCKET_MAX_DEFL  0.436
+
+# Ground test mode (0=flight, 1=ground test -- fins respond without airflow)
+param set ROCKET_GND_TEST  0
+
+# ---- XQPOWER CAN servo parameters ----
+param set XQCAN_ENABLE     1
+param set XQCAN_LIMIT     25.0    # +/-25 deg
+param set XQCAN_REV       0      # no software reversal (left fins mechanically reversed, handled by mixing signs)

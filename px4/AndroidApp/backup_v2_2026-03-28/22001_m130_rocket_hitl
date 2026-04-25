@@ -1,0 +1,56 @@
+#!/bin/sh
+#
+# @name M130 Rocket HITL  (Hardware-In-The-Loop with XQPOWER CAN servos)
+#
+# @type Rocket
+# @class Rocket
+#
+# @maintainer Rocket GNC Team
+#
+# HITL setup for MicoAir H743 + XQPOWER CAN servos:
+#   Physics engine : 6DOF_v2_130 on PC  (propulsion + aerodynamics + mass model)
+#   GNC controller : PX4 on real H743   (rocket_gnc -> xqpower_can -> physical servos)
+#   Protocol       : MAVLink HIL over USB serial
+#   Runner         : 6DOF_v2_130/run_px4_hitl.py
+#
+# Parameters tuned for rocket_M130_v01_CFD68:
+#   mass_dry=11.11 kg, propellant=1.63 kg, diameter=130 mm
+#   Launch: 16.457degN 44.115degE  alt=1200 m MSL
+#   Target: 3500 m North  (bearing 0deg)
+#
+
+. ${R}etc/init.d/rc.rocket_defaults
+
+# HIL mode -- all sensor data comes from 6DOF_v2_130 bridge via USB serial
+param set SYS_HITL 1
+
+# ---- Rocket GNC parameters (matched to rocket_M130_v01_CFD68 config) ----
+
+# Stage 1: climb to set_alt then transition
+param set ROCKET_SET_ALT   120.0   # target altitude stage 1 (m)
+param set ROCKET_T_STG1     15.0   # motor burn time / end of stage 1 (s)
+param set ROCKET_T_CTRL      0.2   # control start delay after launch (s)
+
+# Guidance -- biased proportional navigation
+param set ROCKET_NPN         2.7   # PN navigation constant  (Npn)
+param set ROCKET_IMP_ANG   -30.0   # terminal impact angle (deg, neg = dive)
+param set ROCKET_TAU_PN1    20.0   # bias time constant (s)
+param set ROCKET_K_YAW    0.008    # yaw guidance gain
+param set ROCKET_K_VZ      14.0   # velocity error gain
+
+# Acceleration limits
+param set ROCKET_AYC_LIM    2.0   # yaw accel limit (g)
+param set ROCKET_APC_LIM    8.0   # pitch accel limit (g)
+
+# Target position in NED (m from launch point)
+param set ROCKET_XTRGT   3000.0   # North (range_m=3000, bearing=0deg)
+param set ROCKET_YTRGT      0.0   # East
+param set ROCKET_ZTRGT      0.0   # Down
+
+# Fin deflection limit  (25 deg = 0.436 rad)
+param set ROCKET_MAX_DEFL  0.436
+
+# ---- XQPOWER CAN servo parameters ----
+param set XQCAN_ENABLE     1
+param set XQCAN_LIMIT     25.0    # +/-25 deg
+param set XQCAN_REV       0      # 0b1100: reverse servos 2,3 (left-side fins)

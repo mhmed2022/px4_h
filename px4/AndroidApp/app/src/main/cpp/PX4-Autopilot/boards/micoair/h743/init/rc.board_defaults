@@ -1,0 +1,18 @@
+#!/bin/sh
+#
+# board specific defaults
+#------------------------------------------------------------------------------
+param set-default BAT1_A_PER_V 40
+param set-default BAT1_N_CELLS 4
+param set-default BAT1_V_CHARGED 4.2
+param set-default BAT1_V_DIV 21.2
+param set-default BAT1_V_EMPTY 3.2
+
+param set-default SYS_HAS_MAG 1
+param set-default PWM_MAIN_TIM0 -4
+param set-default RC_INPUT_PROTO -1
+
+param set-default IMU_GYRO_CUTOFF 80
+param set-default SYS_AUTOSTART 22001
+param set-default SYS_HITL 1
+param set-default CBRK_SUPPLY_CHK 894281

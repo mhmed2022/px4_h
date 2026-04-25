@@ -1,0 +1,10 @@
+
+
+{
+		"fields": "\u0089 timestamp;\u008a speed_body_x;\u008a speed_body_y;",
+		"fields_total_length": 57,
+		"orb_ids": [214],
+		"main_orb_id": 214,
+		"dependencies": [],
+		"name": "px4/RoverSpeedSetpoint"
+}

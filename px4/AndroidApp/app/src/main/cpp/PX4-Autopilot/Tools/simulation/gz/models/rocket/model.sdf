@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdf version='1.9'>
+  <model name='rocket'>
+    <include merge='true'>
+      <uri>model://rocket_base</uri>
+    </include>
+    <plugin filename="libBallisticThrusterModelPlugin.so"
+      name="gz::sim::systems::BallisticThrusterModel">
+      <linkName>base_link</linkName>
+      <topic>model/rocket/thrust_command</topic>
+      <maxThrust>2000.0</maxThrust>
+      <!-- Thrust direction along rocket axis (will be rotated by initial pose) -->
+      <!-- Rocket starts at 55 degrees, so thrust will be at 55 degrees in world frame -->
+      <thrustDirection>0 0 1</thrustDirection>
+      <impulseMode>true</impulseMode>
+      <maxThrustDuration>15.0</maxThrustDuration>
+      <enableRangeCalculation>true</enableRangeCalculation>
+      <enableVelocityCalculation>true</enableVelocityCalculation>
+      <rangeTopic>model/rocket/range</rangeTopic>
+      <velocityTopic>model/rocket/velocity</velocityTopic>
+    </plugin>
+    <!-- Aerodynamic drag for stability - helps rocket fall nose-first -->
+    <!-- Drag applied at center of pressure (near fins) to create stabilizing moment -->
+    <plugin filename="gz-sim-lift-drag-system" name="gz::sim::systems::LiftDrag">
+      <a0>0</a0>
+      <cla>0</cla>
+      <cda>0.3</cda>
+      <cma>0</cma>
+      <alpha_stall>0</alpha_stall>
+      <cla_stall>0</cla_stall>
+      <cda_stall>0</cda_stall>
+      <cma_stall>0</cma_stall>
+      <cp>0 0 -0.25</cp>
+      <area>0.0157</area>
+      <air_density>1.2041</air_density>
+      <forward>0 0 1</forward>
+      <upward>0 1 0</upward>
+      <link_name>base_link</link_name>
+    </plugin>
+  </model>
+</sdf>
+

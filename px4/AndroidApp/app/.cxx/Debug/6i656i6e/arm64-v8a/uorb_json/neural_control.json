@@ -1,0 +1,10 @@
+
+
+{
+		"fields": "\u0089 timestamp;\u008a[15] observation;\u008a[4] network_output;\u0084 controller_time;\u0084 inference_time;\u0086[4] _padding0;",
+		"fields_total_length": 133,
+		"orb_ids": [162],
+		"main_orb_id": 162,
+		"dependencies": [],
+		"name": "px4/NeuralControl"
+}

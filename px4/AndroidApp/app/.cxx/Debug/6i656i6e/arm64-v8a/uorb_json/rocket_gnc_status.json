@@ -1,0 +1,10 @@
+
+
+{
+		"fields": "\u0089 timestamp;\u0089 timestamp_sample;\u008a t_flight;\u008a q_dyn;\u008a q_kgf;\u008a pitch_accel_cmd;\u008a yaw_accel_cmd;\u008a yaw_los_deg;\u008a delta_roll;\u008a delta_pitch;\u008a delta_yaw;\u008a fin1;\u008a fin2;\u008a fin3;\u008a fin4;\u008a altitude;\u008a airspeed;\u008a rho;\u008a phi;\u008a wx_filter;\u008a du_roll;\u008a out_integ_roll;\u008a theta;\u008a psi;\u008a alpha_est;\u008a gamma_rad;\u008a pos_downrange;\u008a pos_crossrange;\u008a vel_downrange;\u008a vel_down;\u008a vel_crossrange;\u008a wz_filter;\u008a wy_filter;\u008a ayb_filter;\u008a azb_filter;\u008a out_integ_yaw;\u008a apc_accum;\u008a pn2_b1;\u008a pn2_b_int;\u008a bearing_deg;\u008a target_range_remaining;\u0086 stage;\u0086 servo_online_mask;\u008c alpha_protection_active;\u008c launched;",
+		"fields_total_length": 752,
+		"orb_ids": [208],
+		"main_orb_id": 208,
+		"dependencies": [],
+		"name": "px4/RocketGncStatus"
+}

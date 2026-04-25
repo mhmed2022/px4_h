@@ -1,0 +1,10 @@
+
+
+{
+		"fields": "\u0089 timestamp;\u008c armed;\u008c prearmed;\u008c ready_to_arm;\u008c lockdown;\u008c kill;\u008c termination;\u008c in_esc_calibration_mode;\u0086[1] _padding0;",
+		"fields_total_length": 153,
+		"orb_ids": [1],
+		"main_orb_id": 1,
+		"dependencies": [],
+		"name": "px4/ActuatorArmed"
+}

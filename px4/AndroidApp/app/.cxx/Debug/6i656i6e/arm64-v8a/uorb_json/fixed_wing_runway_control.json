@@ -1,0 +1,10 @@
+
+
+{
+		"fields": "\u0089 timestamp;\u008a wheel_steering_nudging_rate;\u008c wheel_steering_enabled;\u0086[3] _padding0;",
+		"fields_total_length": 102,
+		"orb_ids": [98],
+		"main_orb_id": 98,
+		"dependencies": [],
+		"name": "px4/FixedWingRunwayControl"
+}

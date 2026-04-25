@@ -1,0 +1,10 @@
+
+
+{
+		"fields": "\u0089 timestamp;\u008a indicated_airspeed_m_s;\u008a calibrated_airspeed_m_s;\u008a true_airspeed_m_s;\u008a calibrated_ground_minus_wind_m_s;\u008a calibraded_airspeed_synth_m_s;\u008a airspeed_derivative_filtered;\u008a throttle_filtered;\u008a pitch_filtered;\u0082 airspeed_source;\u0086[7] _padding0;",
+		"fields_total_length": 301,
+		"orb_ids": [13],
+		"main_orb_id": 13,
+		"dependencies": [],
+		"name": "px4/AirspeedValidated"
+}

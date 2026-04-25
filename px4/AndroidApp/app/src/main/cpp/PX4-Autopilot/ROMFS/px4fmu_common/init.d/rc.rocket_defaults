@@ -1,0 +1,144 @@
+#!/bin/sh
+#
+# Rocket M130 default parameters.
+#
+# NOTE: Script variables are declared/initialized/unset in the rcS script.
+#
+
+set VEHICLE_TYPE rocket
+
+# MAV_TYPE_ROCKET = 9
+param set MAV_TYPE 9
+
+# ---- Sensor simulation (used in HIL / SITL mode) ----
+param set SENS_EN_GPSSIM 1
+param set SENS_EN_BAROSIM 1
+param set SENS_EN_MAGSIM 1
+param set SENS_EN_ARSPDSIM 0
+
+# ---- Disable checks that don't apply to a rocket ----
+param set COM_ARM_CHK_ESCS 0      # no ESCs
+param set FD_ESCS_EN 0
+param set FD_FAIL_P 0
+param set FD_FAIL_R 0
+param set COM_ARM_HFLT_CHK 0
+param set SYS_HAS_NUM_ASPD 0     # no airspeed sensor
+param set SYS_HAS_NUM_OF   0     # no optical flow
+param set SYS_HAS_NUM_DIST 0     # no distance sensor
+param set COM_RC_IN_MODE   4     # no RC - disables RC/manual-control checks
+param set COM_ARM_ODID     0     # no OpenDroneID
+param set COM_FLT_TIME_MAX -1    # no flight-time limit
+param set COM_PARACHUTE    0     # no parachute
+param set COM_WIND_WARN    0     # no wind warning
+param set COM_WIND_MAX     0     # no wind arming block
+
+# ---- Failsafe - disable all to avoid interference ----
+param set COM_ACT_FAIL_ACT 0
+param set COM_LOW_BAT_ACT 0
+param set NAV_DLL_ACT 0
+param set NAV_RCL_ACT 0
+param set GF_ACTION 0
+param set CBRK_SUPPLY_CHK 894281
+param set COM_DISARM_PRFLT -1
+
+# ---- EKF2 - use barometer for height, GPS for position ----
+param set EKF2_HGT_REF 1
+param set EKF2_GPS_CTRL 7
+param set EKF2_BARO_CTRL 1
+
+# GPS quality checks: disabled for rocket
+# EKF2 will accept GPS data regardless of quality -- the rocket GNC uses GPS
+# for guidance but arming must not be blocked by poor pre-launch GPS accuracy.
+# Safety note: always verify GPS has 3D fix before real launch.
+param set EKF2_GPS_CHECK  0
+param set EKF2_REQ_EPH    10.0  # relaxed (default 3m)
+param set EKF2_REQ_EPV    15.0  # relaxed (default 5m)
+
+# ---- EKF2 - tuned for rocket dynamics (M130) ----
+# IMU noise: rocket motor vibration (~15g) is far higher than UAV defaults
+param set EKF2_ACC_NOISE    1.0    # default 0.35 -- max allowed by ekf.cpp constrain(0,1)
+param set EKF2_GYR_NOISE    0.05   # default 0.015 -- gyro also disturbed by vibration
+
+# GPS noise: NEO-M8N at 100-300 m/s has 1-3 m/s velocity error, not 0.3
+param set EKF2_GPS_V_NOISE  1.5    # default 0.3 -- prevents GPS rejection at high speed
+param set EKF2_GPS_P_NOISE  2.0    # default 0.5 -- GPS position lags at high speed
+
+# Velocity limit: M130 reaches ~450 m/s -- 700 gives 56% safety margin
+param set EKF2_VEL_LIM      700.0  # default 100.0
+
+# GPS delay: NEO-M8N actual delay is higher than 110ms default
+param set EKF2_GPS_DELAY    200    # default 110 ms
+
+# Smoothing time constants: 0.25s is too aggressive for rocket vibration
+param set EKF2_TAU_VEL      0.5    # default 0.25
+param set EKF2_TAU_POS      0.5    # default 0.25
+
+# Magnetometer: unreliable at high speed/acceleration -- use GPS yaw instead
+param set EKF2_MAG_TYPE     5      # default 0 (auto) -- 5 = none, yaw from GPS
+
+# Barometer noise: dynamic pressure at high speed distorts baro reading
+param set EKF2_BARO_NOISE   10.0   # default 3.5 Pa
+
+# Accelerometer bias instability: rocket vibration (~15g) causes faster bias drift
+param set EKF2_ACC_B_NOISE  0.02   # default 0.003 -- ~7x for motor vibration
+param set EKF2_GYR_B_NOISE  0.005  # default 0.001 -- ~5x for motor vibration
+
+# Accelerometer bias limit: vibration can cause apparent bias beyond default 0.4 m/s^2
+param set EKF2_ABL_LIM      1.0    # default 0.4 m/s^2
+
+# Bias learning limits: allow learning during high-g and moderate rotation
+param set EKF2_ABL_ACCLIM   25.0   # default 25.0 -- inhibit bias learning during high-g thrust
+param set EKF2_ABL_GYRLIM   10.0   # default 3.0  -- allow bias learning during moderate rotation
+param set EKF2_ABL_TAU      0.2    # default 10.0 -- faster bias tracking for short flight (~15-30s)
+
+# Innovation gates: wider tolerance for GPS/baro lag at high speed
+param set EKF2_GPS_P_GATE   10.0   # default 5.0  -- position lag at high speed
+param set EKF2_GPS_V_GATE   10.0   # default 5.0  -- velocity lag at high speed
+param set EKF2_BARO_GATE    15.0   # default 5.0  -- baro lags during fast ascent
+
+# Magnetometer arming check: disabled -- MAG_TYPE=5 (none) already disables mag
+param set EKF2_MAG_CHECK    0      # default 1    -- no mag consistency check at arming
+
+# Dead-reckoning: at 450 m/s, 5s without GPS = 2.25km error -- reduce timeout and increase noise
+param set EKF2_NOAID_TOUT   2000000  # default 5000000 us (5s) -- 2s at 450 m/s = 900m max drift
+param set EKF2_NOAID_NOISE  50.0     # default 10.0 m -- honest uncertainty during GPS-denied flight
+
+# EKF2 prediction rate: 200Hz for faster rocket dynamics (requires IMU at >=200Hz)
+param set EKF2_PREDICT_US   5000   # default 10000 (100Hz) -- 5000 = 200Hz
+
+# ---- MAVLink - TEL4 (UART8) for radio or companion computer ----
+param set MAV_1_CONFIG  104    # UART8 / TEL4
+param set SER_TEL4_BAUD 115200
+param set MAV_1_MODE    15     # 15=Rocket (IMU+ATT+POS+SERVO optimized for 115200 baud)
+param set MAV_1_RATE    0      # 0 = automatic
+
+# ---- Logging: start on ARM, stream over MAVLink as backup ----
+param set SDLOG_MODE      0    # 0 = start logging when armed, stop on disarm
+param set SDLOG_BACKEND   3    # bit0=SD + bit1=MAVLink ULog streaming
+
+# ---- Control Allocator - X-fin rocket geometry ----
+# CA_AIRFRAME=9 (Custom), no motors, 4 control surfaces.
+# Physical fin order: CS0=TR(fin1), CS1=BR(fin2), CS2=BL(fin3), CS3=TL(fin4)
+# X-fin mixing: CS0=TR: +R -P +Y | CS1=BR: +R -P -Y | CS2=BL: +R +P -Y | CS3=TL: +R +P +Y
+param set CA_AIRFRAME        9
+param set CA_SV_CS_COUNT     4
+# CS0=TR(fin1): +roll -pitch +yaw
+param set CA_SV_CS0_TYPE    12
+param set CA_SV_CS0_TRQ_R  0.25
+param set CA_SV_CS0_TRQ_P -0.25
+param set CA_SV_CS0_TRQ_Y  0.25
+# CS1=BR(fin2): +roll -pitch -yaw
+param set CA_SV_CS1_TYPE    12
+param set CA_SV_CS1_TRQ_R  0.25
+param set CA_SV_CS1_TRQ_P -0.25
+param set CA_SV_CS1_TRQ_Y -0.25
+# CS2=BL(fin3): +roll +pitch -yaw
+param set CA_SV_CS2_TYPE    12
+param set CA_SV_CS2_TRQ_R  0.25
+param set CA_SV_CS2_TRQ_P  0.25
+param set CA_SV_CS2_TRQ_Y -0.25
+# CS3=TL(fin4): +roll +pitch +yaw
+param set CA_SV_CS3_TYPE    12
+param set CA_SV_CS3_TRQ_R  0.25
+param set CA_SV_CS3_TRQ_P  0.25
+param set CA_SV_CS3_TRQ_Y  0.25

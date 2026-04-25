@@ -1,0 +1,29 @@
+#!/bin/sh
+#
+# Standard apps for rockets.
+#
+# NOTE: Script variables are declared/initialized/unset in the rcS script.
+#
+
+#
+# Start Control Allocator (X-fin mixer: CA_AIRFRAME=9 Custom, TRQ=±0.25).
+# Mathematical equivalence: pinv(0.25*E_xfin) = E_xfin^T, so CA output
+# matches the explicit X-fin formula exactly with no gain error.
+#
+control_allocator start
+
+#
+# Start Rocket GNC (Guidance, Navigation & Control).
+# Publishes vehicle_torque_setpoint; control_allocator handles fin mixing.
+#
+rocket_gnc start
+
+#
+# Start XQPOWER CAN servo driver (if enabled and available).
+# On HITL: drives physical servos from rocket_gnc fin commands.
+# On SITL: binary not present, command silently ignored.
+#
+if param greater XQCAN_ENABLE 0
+then
+	xqpower_can start
+fi
