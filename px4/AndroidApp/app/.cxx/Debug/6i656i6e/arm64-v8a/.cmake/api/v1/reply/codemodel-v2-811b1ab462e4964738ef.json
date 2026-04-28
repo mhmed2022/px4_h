@@ -41,14 +41,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "px4phone_native::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-px4phone_native-Debug-57c9af854bc2652fc9c4.json",
+					"jsonFile" : "target-px4phone_native-Debug-bc190395f28f8d4a0dcf.json",
 					"name" : "px4phone_native",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "usb1.0::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-usb1.0-Debug-a9bc6a247f32e0bfea22.json",
+					"jsonFile" : "target-usb1.0-Debug-9a8cd8ecc123284d8ca4.json",
 					"name" : "usb1.0",
 					"projectIndex" : 0
 				}
@@ -58,8 +58,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a",
-		"source" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp"
+		"build" : "/home/ash/Documents/GitHub/px4_h/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a",
+		"source" : "/home/ash/Documents/GitHub/px4_h/px4/AndroidApp/app/src/main/cpp"
 	},
 	"version" : 
 	{

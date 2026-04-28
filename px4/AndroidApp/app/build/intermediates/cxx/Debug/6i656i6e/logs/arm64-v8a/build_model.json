@@ -8,9 +8,9 @@
     "triple": "aarch64-linux-android",
     "llvmTriple": "aarch64-none-linux-android"
   },
-  "cxxBuildFolder": "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a",
-  "soFolder": "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/build/intermediates/cxx/Debug/6i656i6e/obj/arm64-v8a",
-  "soRepublishFolder": "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/build/intermediates/cmake/debug/obj/arm64-v8a",
+  "cxxBuildFolder": "/home/ash/Documents/GitHub/px4_h/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a",
+  "soFolder": "/home/ash/Documents/GitHub/px4_h/px4/AndroidApp/app/build/intermediates/cxx/Debug/6i656i6e/obj/arm64-v8a",
+  "soRepublishFolder": "/home/ash/Documents/GitHub/px4_h/px4/AndroidApp/app/build/intermediates/cmake/debug/obj/arm64-v8a",
   "abiPlatformVersion": 26,
   "cmake": {
     "effectiveConfiguration": {
@@ -31,13 +31,13 @@
     "implicitBuildTargetSet": [],
     "cmakeSettingsConfiguration": "android-gradle-plugin-predetermined-name",
     "module": {
-      "cxxFolder": "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx",
-      "intermediatesBaseFolder": "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/build/intermediates",
-      "intermediatesFolder": "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/build/intermediates/cxx",
+      "cxxFolder": "/home/ash/Documents/GitHub/px4_h/px4/AndroidApp/app/.cxx",
+      "intermediatesBaseFolder": "/home/ash/Documents/GitHub/px4_h/px4/AndroidApp/app/build/intermediates",
+      "intermediatesFolder": "/home/ash/Documents/GitHub/px4_h/px4/AndroidApp/app/build/intermediates/cxx",
       "gradleModulePathName": ":app",
-      "moduleRootFolder": "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app",
-      "moduleBuildFile": "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/build.gradle.kts",
-      "makeFile": "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp/CMakeLists.txt",
+      "moduleRootFolder": "/home/ash/Documents/GitHub/px4_h/px4/AndroidApp/app",
+      "moduleBuildFile": "/home/ash/Documents/GitHub/px4_h/px4/AndroidApp/app/build.gradle.kts",
+      "makeFile": "/home/ash/Documents/GitHub/px4_h/px4/AndroidApp/app/src/main/cpp/CMakeLists.txt",
       "buildSystem": "CMAKE",
       "ndkFolder": "/home/ash/Android/Sdk/ndk/29.0.14206865",
       "ndkFolderBeforeSymLinking": "/home/ash/Android/Sdk/ndk/29.0.14206865",
@@ -148,7 +148,7 @@
         "SYSTEM": {}
       },
       "project": {
-        "rootBuildGradleFolder": "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp",
+        "rootBuildGradleFolder": "/home/ash/Documents/GitHub/px4_h/px4/AndroidApp",
         "sdkFolder": "/home/ash/Android/Sdk",
         "isBuildOnlyTargetAbiEnabled": true,
         "ideBuildTargetAbi": "arm64-v8a,armeabi-v7a,armeabi",
@@ -168,12 +168,12 @@
   "buildSettings": {
     "environmentVariables": []
   },
-  "prefabFolder": "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/prefab/arm64-v8a",
+  "prefabFolder": "/home/ash/Documents/GitHub/px4_h/px4/AndroidApp/app/.cxx/Debug/6i656i6e/prefab/arm64-v8a",
   "isActiveAbi": true,
   "fullConfigurationHash": "6i656i6e6r486o2j38vn5z191r071631b3q672j555e5m4n391w1w6b4w155n",
   "fullConfigurationHashKey": "# Values used to calculate the hash in this folder name.\n# Should not depend on the absolute path of the project itself.\n#   - AGP: 8.13.2.\n#   - $NDK is the path to NDK 29.0.14206865.\n#   - $PROJECT is the path to the parent folder of the root Gradle build file.\n#   - $ABI is the ABI to be built with. The specific value doesn\u0027t contribute to the value of the hash.\n#   - $HASH is the hash value computed from this text.\n#   - $CMAKE is the path to CMake 4.1.2.\n#   - $NINJA is the path to Ninja.\n-H$PROJECT/app/src/main/cpp\n-DCMAKE_SYSTEM_NAME\u003dAndroid\n-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\n-DCMAKE_SYSTEM_VERSION\u003d26\n-DANDROID_PLATFORM\u003dandroid-26\n-DANDROID_ABI\u003d$ABI\n-DCMAKE_ANDROID_ARCH_ABI\u003d$ABI\n-DANDROID_NDK\u003d$NDK\n-DCMAKE_ANDROID_NDK\u003d$NDK\n-DCMAKE_TOOLCHAIN_FILE\u003d$NDK/build/cmake/android.toolchain.cmake\n-DCMAKE_MAKE_PROGRAM\u003d$NINJA\n-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003d$PROJECT/app/build/intermediates/cxx/Debug/$HASH/obj/$ABI\n-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003d$PROJECT/app/build/intermediates/cxx/Debug/$HASH/obj/$ABI\n-DCMAKE_BUILD_TYPE\u003dDebug\n-B$PROJECT/app/.cxx/Debug/$HASH/$ABI\n-GNinja",
   "configurationArguments": [
-    "-H/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp",
+    "-H/home/ash/Documents/GitHub/px4_h/px4/AndroidApp/app/src/main/cpp",
     "-DCMAKE_SYSTEM_NAME\u003dAndroid",
     "-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON",
     "-DCMAKE_SYSTEM_VERSION\u003d26",
@@ -184,11 +184,11 @@
     "-DCMAKE_ANDROID_NDK\u003d/home/ash/Android/Sdk/ndk/29.0.14206865",
     "-DCMAKE_TOOLCHAIN_FILE\u003d/home/ash/Android/Sdk/ndk/29.0.14206865/build/cmake/android.toolchain.cmake",
     "-DCMAKE_MAKE_PROGRAM\u003d/home/ash/Android/Sdk/cmake/4.1.2/bin/ninja",
-    "-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003d/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/build/intermediates/cxx/Debug/6i656i6e/obj/arm64-v8a",
-    "-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003d/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/build/intermediates/cxx/Debug/6i656i6e/obj/arm64-v8a",
+    "-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003d/home/ash/Documents/GitHub/px4_h/px4/AndroidApp/app/build/intermediates/cxx/Debug/6i656i6e/obj/arm64-v8a",
+    "-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003d/home/ash/Documents/GitHub/px4_h/px4/AndroidApp/app/build/intermediates/cxx/Debug/6i656i6e/obj/arm64-v8a",
     "-DCMAKE_BUILD_TYPE\u003dDebug",
-    "-B/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a",
+    "-B/home/ash/Documents/GitHub/px4_h/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a",
     "-GNinja"
   ],
-  "intermediatesParentFolder": "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/build/intermediates/cxx/Debug/6i656i6e"
+  "intermediatesParentFolder": "/home/ash/Documents/GitHub/px4_h/px4/AndroidApp/app/build/intermediates/cxx/Debug/6i656i6e"
 }

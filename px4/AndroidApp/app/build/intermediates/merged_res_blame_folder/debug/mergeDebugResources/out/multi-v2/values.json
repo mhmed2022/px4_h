@@ -38,23 +38,6 @@
                     }
                 },
                 {
-                    "source": "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/res/values/strings.xml",
-                    "from": {
-                        "startLines": "1",
-                        "startColumns": "4",
-                        "startOffsets": "17",
-                        "endColumns": "46",
-                        "endOffsets": "59"
-                    },
-                    "to": {
-                        "startLines": "108",
-                        "startColumns": "4",
-                        "startOffsets": "6554",
-                        "endColumns": "46",
-                        "endOffsets": "6596"
-                    }
-                },
-                {
                     "source": "/home/ash/.gradle/caches/8.13/transforms/1fcfa12bba13ed6d0aa393c81444a9f5/transformed/ui-graphics-release/res/values/values.xml",
                     "from": {
                         "startLines": "2",
@@ -89,6 +72,40 @@
                     }
                 },
                 {
+                    "source": "/home/ash/Documents/GitHub/px4_h/px4/AndroidApp/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "17",
+                        "endColumns": "46",
+                        "endOffsets": "59"
+                    },
+                    "to": {
+                        "startLines": "108",
+                        "startColumns": "4",
+                        "startOffsets": "6554",
+                        "endColumns": "46",
+                        "endOffsets": "6596"
+                    }
+                },
+                {
+                    "source": "/home/ash/Documents/GitHub/px4_h/px4/AndroidApp/app/src/main/res/values/themes.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endColumns": "88",
+                        "endOffsets": "141"
+                    },
+                    "to": {
+                        "startLines": "231",
+                        "startColumns": "4",
+                        "startOffsets": "14778",
+                        "endColumns": "87",
+                        "endOffsets": "14861"
+                    }
+                },
+                {
                     "source": "/home/ash/.gradle/caches/8.13/transforms/bab6f2fad61488e20559d72150051567/transformed/navigationevent/res/values/values.xml",
                     "from": {
                         "startLines": "2",
@@ -103,23 +120,6 @@
                         "startOffsets": "6050",
                         "endColumns": "60",
                         "endOffsets": "6106"
-                    }
-                },
-                {
-                    "source": "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/res/values/themes.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "57",
-                        "endColumns": "88",
-                        "endOffsets": "141"
-                    },
-                    "to": {
-                        "startLines": "231",
-                        "startColumns": "4",
-                        "startOffsets": "14778",
-                        "endColumns": "87",
-                        "endOffsets": "14861"
                     }
                 },
                 {

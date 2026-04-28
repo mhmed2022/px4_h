@@ -151,7 +151,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a"
+			"value" : "/home/ash/Documents/GitHub/px4_h/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -671,7 +671,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/CMakeFiles/pkgRedirects"
+			"value" : "/home/ash/Documents/GitHub/px4_h/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -731,7 +731,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp"
+			"value" : "/home/ash/Documents/GitHub/px4_h/px4/AndroidApp/app/src/main/cpp"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -767,7 +767,7 @@
 				}
 			],
 			"type" : "UNINITIALIZED",
-			"value" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/build/intermediates/cxx/Debug/6i656i6e/obj/arm64-v8a"
+			"value" : "/home/ash/Documents/GitHub/px4_h/px4/AndroidApp/app/build/intermediates/cxx/Debug/6i656i6e/obj/arm64-v8a"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -1063,7 +1063,7 @@
 				}
 			],
 			"type" : "UNINITIALIZED",
-			"value" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/build/intermediates/cxx/Debug/6i656i6e/obj/arm64-v8a"
+			"value" : "/home/ash/Documents/GitHub/px4_h/px4/AndroidApp/app/build/intermediates/cxx/Debug/6i656i6e/obj/arm64-v8a"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1375,7 +1375,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a"
+			"value" : "/home/ash/Documents/GitHub/px4_h/px4/AndroidApp/app/.cxx/Debug/6i656i6e/arm64-v8a"
 		},
 		{
 			"name" : "px4phone_native_IS_TOP_LEVEL",
@@ -1399,7 +1399,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/ash/Documents/GitHub/px4_nwe/px4/AndroidApp/app/src/main/cpp"
+			"value" : "/home/ash/Documents/GitHub/px4_h/px4/AndroidApp/app/src/main/cpp"
 		}
 	],
 	"kind" : "cache",
