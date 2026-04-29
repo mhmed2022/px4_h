@@ -38,7 +38,6 @@
         android:label="PX4 v1.17"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/Theme.PX4PhoneApp" >
         <activity
             android:name="com.ardophone.px4v17.MainActivity"

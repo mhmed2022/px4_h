@@ -151,7 +151,6 @@
         "rootBuildGradleFolder": "/home/ash/Documents/GitHub/px4_h/px4/AndroidApp",
         "sdkFolder": "/home/ash/Android/Sdk",
         "isBuildOnlyTargetAbiEnabled": true,
-        "ideBuildTargetAbi": "arm64-v8a,armeabi-v7a,armeabi",
         "isCmakeBuildCohabitationEnabled": false,
         "isPrefabEnabled": false
       },
